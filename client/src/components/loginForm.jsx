@@ -49,7 +49,7 @@ class LoginForm extends Component {
               type="text"
               className="fadeIn second"
               name="email"
-              placeholder="login"
+              placeholder="email"
               onChange={this.handleChange}
             />
             <input
