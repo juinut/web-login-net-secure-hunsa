@@ -34,6 +34,9 @@ class LoginForm extends Component {
 
     this.setState({ data, errors });
   };
+  toastTrolling = () => {
+    toast.info("Poor you :)");
+  };
   render() {
     return (
       <div className="wrapper fadeInDown">
@@ -63,7 +66,7 @@ class LoginForm extends Component {
           </form>
 
           <div id="formFooter">
-            <a className="underlineHover" href="#">
+            <a className="underlineHover" href="#" onClick={this.toastTrolling}>
               Forgot Password?
             </a>
           </div>
